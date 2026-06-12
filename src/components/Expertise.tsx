@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, FileText, Search, Handshake } from "lucide-react"
+import { Home, FileText, Search, Handshake, BadgeCheck, Scale, Shield, Umbrella } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
@@ -25,6 +25,30 @@ const expertiseAreas = [
     description:
       "Беру на себя все переговоры, проверку документов и взаимодействие с банком, нотариусом и регистраторами.",
     icon: Handshake,
+  },
+  {
+    title: "Одобрение ипотеки 100%",
+    description:
+      "Подберу банк с лучшими условиями и помогу получить одобрение. Работаю с ведущими банками и знаю, как добиться положительного решения.",
+    icon: BadgeCheck,
+  },
+  {
+    title: "Правовая экспертиза",
+    description:
+      "Проверю юридическую историю объекта, наличие обременений и рисков. Вы будете уверены в чистоте сделки до подписания договора.",
+    icon: Scale,
+  },
+  {
+    title: "Сопровождение на всех этапах",
+    description:
+      "От первого звонка до получения ключей — всегда на связи. Помогаю с документами, переговорами, регистрацией права собственности.",
+    icon: Shield,
+  },
+  {
+    title: "Услуги страхования",
+    description:
+      "Помогу оформить страхование недвижимости, жизни и титула. Подберу выгодный полис и объясню, что и от чего защищает.",
+    icon: Umbrella,
   },
 ]
 
