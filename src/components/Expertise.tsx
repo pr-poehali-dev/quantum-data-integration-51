@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { Home, FileText, Search, Handshake } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
+    title: "Покупка квартиры",
+    description: "Помогу найти квартиру под ваш бюджет и пожелания, проверю юридическую чистоту и проведу сделку от начала до конца.",
     icon: Home,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Продажа недвижимости",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Оценю объект по рынку, организую показы и найду покупателя в кратчайшие сроки по максимально выгодной цене.",
+    icon: FileText,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Подбор по параметрам",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Провожу полный анализ рынка и отбираю только подходящие варианты — без лишних просмотров и потери времени.",
+    icon: Search,
   },
   {
-    title: "Градостроительство",
+    title: "Сопровождение сделки",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Беру на себя все переговоры, проверку документов и взаимодействие с банком, нотариусом и регистраторами.",
+    icon: Handshake,
   },
 ]
 
@@ -57,14 +57,14 @@ export function Expertise() {
     <section id="services" ref={sectionRef} className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-20">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Мои услуги</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Помогу</HighlightedText> с любым
             <br />
-            практикой
+            вопросом
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Более 5 лет на рынке недвижимости. Провёл свыше 100 успешных сделок — покупка, продажа и аренда любой сложности.
           </p>
         </div>
 
